@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tic-Tac-Toe</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="app">
+    <h1>Tic-Tac-Toe</h1>
+
+    <section class="controls">
+      <label>
+        Game Mode
+        <select id="modeSelect">
+          <option value="single">Single Player (vs AI)</option>
+          <option value="multi">Multiplayer (Local)</option>
+        </select>
+      </label>
+
+      <label id="difficultyWrapper">
+        AI Difficulty
+        <select id="difficultySelect">
+          <option value="easy">Easy</option>
+          <option value="medium">Medium</option>
+          <option value="hard">Hard</option>
+        </select>
+      </label>
+
+      <button id="resetBtn">New Game</button>
+    </section>
+
+    <p id="status" class="status">Player X's turn</p>
+
+    <section id="board" class="board" aria-label="Tic Tac Toe Board"></section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
